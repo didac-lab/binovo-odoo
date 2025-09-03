@@ -1,28 +1,41 @@
 Módulos customizados en la versión 12.0 de Odoo
 
-	A continuación se listan una serie de funcionalidades a añadir en módulos customizados a desarrollar partiendo de la rama 12.0  de la comunidad de Odoo (OCA/OCB). Se podrán utilizar y amoldar a medida desarrollos realizados en diferentes submódulos de esta misma asocicación, referenciadas en el github de la OCA, teniendo en cuenta siempre la rama 12.0.
+	A continuación se listan una serie de funcionalidades a añadir en módulos customizados a desarrollar partiendo de
+	la rama 12.0 de la comunidad de Odoo (OCA/OCB). Se podrán utilizar y amoldar a medida desarrollos realizados en
+	diferentes submódulos de esta misma asocicación, referenciadas en el github de la OCA, teniendo en cuenta siempre
+	la rama 12.0.
 
 	1.	ASOCIAR BLOGS/NOTICIAS A UNA COMPAÑIA
 
 	Descripción
 
-	Poder asociar un blog a una única compañía y que las noticias asociadas a ese blog, heredan la compañía del blog al que pertenecen.
-	La compañía se asociará desde la vista formulario del blog y en la vista de la noticia se podrá ver la compañía pero no modificarla (lo hereda del blog). Los diferentes perfiles de usuarios de Odoo, podrán visualizar y gestionar sólo los blogs y noticias asociadas a su compañía y a aquellas compañías descendientes de ésta si se diera el caso.
+	Poder asociar un blog a una única compañía y que las noticias asociadas a ese blog, heredan la compañía del blog al
+	que pertenecen.	La compañía se asociará desde la vista formulario del blog y en la vista de la noticia se podrá ver
+	la compañía pero no modificarla (lo hereda del blog). Los diferentes perfiles de usuarios de Odoo, podrán visualizar
+	y gestionar sólo los blogs y noticias asociadas a su compañía y a aquellas compañías descendientes de ésta si sediera el caso.
 
-	1.	NO PERMITIR PEDIDOS DE VENTA CON CANTIDADES CERO
+	2.	NO PERMITIR PEDIDOS DE VENTA CON CANTIDADES CERO
 
 	Descripción
 
-	Se trata de impedir pedidos de venta con cantidad de productos a cero. Si el usuario pulsa el botón de confirmación de venta con cantidades de productos a cero, se mostrará una advertencia y se impedirá la continuación del flujo de venta.
-	Como complementación, se pide añadir un botón en la cabecera del pedido de venta que borre precisamente sólo aquellas líneas que tengan la cantidad del producto a cero.
-	En caso de tener experiencia con test unitarios, añadir un test por cada una de las dos funcionalidades solicitadas.
-	1.
-	2.	MODIFICACIONES FORMULARIO DE CONTACTO DE OPORTUNIDADES
+	Se trata de impedir pedidos de venta con cantidad de productos a cero. Si el usuario pulsa el botón de confirmación
+	de venta con cantidades de productos a cero, se mostrará una advertencia y se impedirá la continuación del flujo de
+	venta. Como complementación, se pide añadir un botón en la cabecera del pedido de venta que borre precisamente sólo
+	aquellas líneas que tengan la cantidad del producto a cero. En caso de tener experiencia con test unitarios, añadir
+	un test por cada una de las dos funcionalidades solicitadas.
+
+	3.  MODIFICACIONES FORMULARIO DE CONTACTO DE OPORTUNIDADES
 
 	Descripción
 
 	Queremos customizar el módulo de oportunidades (CRM) y su formulario de contacto:
 
-	•	En el modelo de la oportunidad añadir un campo seleccionable donde el usuario deberá de indicar a través de que fuente ha dado con la empresa: “Terceros/Redes sociales/Búsqueda en Internet”. Será un campo seleccionable a mostrar en la vista formulario del backend y frontend (website).
-	•	En la parte website, del formulario de contacto por un lado quitar el teléfono, hacer no requerido la compañía y además mostrar este campo seleccionable que será requerido en el que el usuario deberá de seleccionar de que fuente ha dado con la empresa: “Terceros/Redes sociales/Búsqueda en Internet”.
+	•	En el modelo de la oportunidad añadir un campo seleccionable donde el usuario deberá de indicar a través de que
+	fuente ha dado con la empresa: “Terceros/Redes sociales/Búsqueda en Internet”. Será un campo seleccionable a mostrar
+	en la vista formulario del backend y frontend (website).
+
+	•	En la parte website, del formulario de contacto por un lado quitar el teléfono, hacer no requerido la compañía y
+	además mostrar este campo seleccionable que será requerido en el que el usuario deberá de seleccionar de que fuente
+	ha dado con la empresa: “Terceros/Redes sociales/Búsqueda en Internet”.
+
 	•	Añadir validación al campo del e-mail.
