@@ -20,7 +20,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
-    command: odoo -d odoo_db -u hustle_website --dev=xml --db_user=odoo --db_password=odoo --db_host=db odoo-bin -d odoo_db
+    command: odoo -d odoo_db -u hustle_website --dev=xml --db_user=odoo --db_password=odoo --db_host=db
 
 volumes:
   odoo-web-data:
