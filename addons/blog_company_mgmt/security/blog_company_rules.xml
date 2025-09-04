@@ -1,0 +1,15 @@
+<odoo>
+  <record id="rule_blog_blog_company_scope" model="ir.rule">
+    <field name="name">Blog by user's company hierarchy</field>
+    <field name="model_id" ref="website_blog.model_blog_blog"/>
+    <field name="domain_force">['|', ('company_id','=',False), ('company_id','child_of', user.company_id.id)]</field>
+    <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+  </record>
+
+  <record id="rule_blog_post_company_scope" model="ir.rule">
+    <field name="name">Blog Post by user's company hierarchy</field>
+    <field name="model_id" ref="website_blog.model_blog_post"/>
+    <field name="domain_force">['|', ('company_id','=',False), ('company_id','child_of', user.company_id.id)]</field>
+    <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+  </record>
+</odoo>

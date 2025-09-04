@@ -41,9 +41,9 @@ Stand up an Odoo 16 Community stack with PostgreSQL using Docker Compose and loa
 3. **Initialize Odoo**
 
    * Open [http://localhost:8069](http://localhost:8069)
-   * Create a database (set master password if prompted)
-   * Go to Apps and install what you need (Website, Website Blog, Sales, CRM, etc.)
-   * Ensure `addons/` is picked up via `addons_path`
+   * Log in with **username:** `admin` and **password:** `admin`
+   * Navigate to **Apps**, clear all default filters, then search and install the required modules (Blog, CRM, Sales)
+   * Verify that `addons/` is correctly included in the `addons_path`
 
 ## Configuration
 
